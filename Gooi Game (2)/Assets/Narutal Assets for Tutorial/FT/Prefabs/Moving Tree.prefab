@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1812928047726380}
+  m_IsPrefabAsset: 1
+--- !u!1 &1812928047726380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4491245154436892}
+  - component: {fileID: 114048103189265110}
+  m_Layer: 0
+  m_Name: Moving Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4491245154436892
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812928047726380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114048103189265110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1812928047726380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f5b5385a64ddd64db4de1b71d9a95e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildOnStart: 1
+  treeType: 1
+  branchPrefab: {fileID: 1299115462509342, guid: 09a9eaadb85ec764ca2c8ce67ee29e9b,
+    type: 2}
+  defaultBranchColour: {r: 1, g: 1, b: 1, a: 1}
+  defaultGrowthCount: 8
+  defaultInitialLength: 5
+  defaultLengthReductionOnNewGeneration: 0.67
+  defaultAngle: 45
+  defaultWidth: 0.04
+  lTreeAutoWidth: 1
+  lTreeMassBasedOnWidth: 1
+  lTreeWidth: 0.03
+  lTreeGrowthCount: 5
+  lTreeAxiom: FX
+  lTreeRules:
+  - from: 70
+    to: C0FF-[C1-F+F]+[C2+F-F]
+  - from: 88
+    to: C0FF+[C1+F]+[C3-F]
+  lTreeBranchLength: 0.2
+  lTreeAngle: 25
+  lTreeColours:
+  - {r: 0.43382353, g: 0.3126081, b: 0.13078503, a: 1}
+  - {r: 0.20392159, g: 0.5019608, b: 0.18039216, a: 1}
+  - {r: 0.20392159, g: 0.5019608, b: 0.18039216, a: 1}
+  - {r: 0.20441179, g: 0.5, b: 0.18014705, a: 1}
+  colonizationLeafParent: {fileID: 0}
+  colonizationBranchColor: {r: 1, g: 1, b: 1, a: 1}
+  colonizationInitialLength: 1
+  colonizationWidth: 0.04
+  colonizationMinDistance: 1
+  colonizationMaxDistance: 10
+  forceDistanceMulti: 4
