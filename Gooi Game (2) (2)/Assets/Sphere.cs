@@ -13,7 +13,7 @@ public class Sphere : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime, 0f, 0f);	
+        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime, 0f, Input.GetAxis("Vertical")*Time.deltaTime);	
 
     }
 }
