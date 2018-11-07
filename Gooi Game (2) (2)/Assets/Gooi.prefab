@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 137874480240019758}
   - component: {fileID: 135209755500251470}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Gooi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
