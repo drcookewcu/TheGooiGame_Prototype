@@ -26,9 +26,10 @@ public class FollowCamera : MonoBehaviour
 
         transform.LookAt(target.transform);
 
+        //Trying to figure out how to keep the camera in the room so it wont go through walls
         /*transform.position = new Vector3(
-        Mathf.Clamp(transform.position.x, -.5, .5),
-        Mathf.Clamp(transform.position.y, -.5, .5));*/
+        Mathf.Clamp(transform.position.x, 0, 1),
+        Mathf.Clamp(transform.position.y, 0, 1));*/ 
     }
 }
 
