@@ -5,8 +5,9 @@ using UnityEngine;
 
 namespace UnityStandardAssets.ImageEffects
 {
-    [CustomEditor(typeof(CreaseShading))]
-    class CreaseShadingEditor : Editor {
+    [CustomEditor(typeof(CreaseShadingEditor))]
+    class CreaseShadingEditor : Editor
+    {
         SerializedObject serObj;
 
         SerializedProperty m_intensity;
@@ -19,8 +20,9 @@ namespace UnityStandardAssets.ImageEffects
         private bool softnessWarningValue { get { return m_softness.intValue > 4; } }
         private bool spreadWarningValue { get { return m_spread.floatValue > 4; } }
 
-        void OnEnable () {
-            serObj = new SerializedObject (target);
+        void OnEnable()
+        {
+            serObj = new SerializedObject(target);
 
             m_intensity = serObj.FindProperty("intensity");
             m_softness = serObj.FindProperty("softness");
@@ -33,8 +35,9 @@ namespace UnityStandardAssets.ImageEffects
             m_showSpreadWarning.value = spreadWarningValue;
         }
 
-        public override void OnInspectorGUI () {
-            serObj.Update ();
+        public override void OnInspectorGUI()
+        {
+            serObj.Update();
 
             EditorGUILayout.Slider(m_intensity, -5.0f, 5.0f, new GUIContent("Intensity"));
 
@@ -54,7 +57,7 @@ namespace UnityStandardAssets.ImageEffects
             }
             EditorGUILayout.EndFadeGroup();
 
-            serObj.ApplyModifiedProperties ();
+            serObj.ApplyModifiedProperties();
         }
     }
 }
