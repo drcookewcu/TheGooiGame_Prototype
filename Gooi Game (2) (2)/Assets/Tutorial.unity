@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1688738201}
-  m_IndirectSpecularColor: {r: 0.73024184, g: 0.78898203, b: 0.8498679, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -189,6 +189,10 @@ Prefab:
       propertyPath: m_AABB.m_Extent.z
       value: 0.49996132
       objectReference: {fileID: 0}
+    - target: {fileID: 1403357611198576, guid: 7374d5dd15fb9774b8860160ab5eb3fc, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7374d5dd15fb9774b8860160ab5eb3fc, type: 2}
   m_IsPrefabAsset: 0
@@ -233,17 +237,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &20607144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 20607140}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2cb9c413d9dc4362ada190b38d32860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &20607145
 CharacterController:
   m_ObjectHideFlags: 0
@@ -609,6 +602,17 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &412837458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412837453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff48871702024c8cbd510bd5cda730c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &477868166
 Prefab:
   m_ObjectHideFlags: 0
